@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Bootstrap 5 CDN (CSS + JS Bundle) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -30,6 +39,57 @@ https://templatemo.com/tm-569-edu-meeting
   </head>
 
 <body>
+<style>
+/* Garante que as imagens se ajustem ao tamanho da tela */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Garante que vídeos, iframes e objetos também se ajustem */
+iframe, embed, object, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes para containers se adaptarem */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Se você não estiver usando Bootstrap, adicione isso para layout flexível */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*="col-"] {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Classes de colunas responsivas simples */
+.col-12 {
+  width: 100%;
+}
+@media(min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+}
+</style>
 
   <!-- Sub Header -->
   <div class="sub-header">
@@ -69,7 +129,14 @@ https://templatemo.com/tm-569-edu-meeting
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                           <li class="scroll-to-section"><a href="#top" class="active">INÍCIO</a></li>
-                          <li class="scroll-to-section"><a href="#apply">MATRÍCULA </a></li>                          </li>
+                          <li class="scroll-to-section"><a href="#apply">MATRÍCULA </a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">SAIBA MAIS</a>
+                              <ul class="sub-menu">
+                                  <li><a href="meetings.html">CURSOS PREPARATÓRIO</a></li>
+                                  <li><a href="meeting-details.html">SOBRE NÓS</a></li>
+                              </ul>
+                          </li>                          </li>
                           <li class="scroll-to-section"><a href="#contact">CONTATO</a></li> 
                       </ul>        
                       <a class='menu-trigger'>
@@ -186,10 +253,10 @@ https://templatemo.com/tm-569-edu-meeting
       </div>
     </div>
   </section>
-
-  <section class="apply-now" id="apply">
+<section class="apply-now" id="apply">
   <div class="container">
     <div class="row">
+      
       <!-- Coluna 1: Matrículas -->
       <div class="col-lg-6 align-self-center">
         <div class="row">
@@ -210,7 +277,7 @@ https://templatemo.com/tm-569-edu-meeting
           </div>
 
           <!-- Categoria A (Moto) -->
-          <div class="col-lg-12">
+          <div class="col-lg-12 mt-4">
             <div class="item">
               <h3>MATRICULE-SE NA CATEGORIA A (MOTO)</h3>
               <p>Curso prático com motos seguras, equipamentos fornecidos e circuito de treino.</p>
@@ -227,50 +294,139 @@ https://templatemo.com/tm-569-edu-meeting
         </div>
       </div>
 
-      <!-- Coluna 2: Acordeões -->
-      <div class="col-lg-6">
-        <div class="accordions is-first-expanded">
-          <article class="accordion">
-            <div class="accordion-head">
-              <span>Sobre a Auto Escola Remanso</span>
-              <span class="icon">
-                <i class="icon fa fa-chevron-right"></i>
-              </span>
-            </div>
-            <div class="accordion-body">
-              <div class="content">
-                <p>
-                  Na Remanso, formamos condutores com responsabilidade e foco total na aprovação. 
-                  Aulas práticas, teóricas e suporte completo.
-                </p>
-              </div>
-            </div>
-          </article>
+      <!-- Coluna 2: Panfleto Explicativo -->
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <div class="painel-info">
+          <h3 class="painel-titulo">📋 Informações Importantes</h3>
 
-          <article class="accordion">
-            <div class="accordion-head">
-              <span>O que oferecemos:</span>
-              <span class="icon">
-                <i class="icon fa fa-chevron-right"></i>
-              </span>
-            </div>
-            <div class="accordion-body">
-              <div class="content">
-                <p>
-📘 Treinamento pratico e aulas presenciais e MELHOR PREÇO DA CIDADE!<br>
-🛵 Aulas de carro e moto<br>
-📍 Localização privilegiada em Hortolândia<br>
-💬 Atendimento pelo WhatsApp<br>
-➡️ Tire dúvidas com nosso time de atendimento!
-                </p>
-              </div>
-            </div>
-          </article>
+          <div class="info-box">
+            <strong>⏱ Duração do Curso:</strong>
+            <p>Em média de 30 a 45 dias, dependendo da disponibilidade do aluno.</p>
+          </div>
+
+          <div class="info-box">
+            <strong>🧤 Equipamentos Fornecidos:</strong>
+            <p>A Auto Escola oferece motos, capacetes e itens de segurança durante o curso.</p>
+          </div>
+
+          <div class="info-box">
+            <strong>💳 Formas de Pagamento:</strong>
+            <p>Aceitamos PIX, cartões de crédito/débito e parcelamentos facilitados.</p>
+          </div>
+
+          <div class="info-box">
+            <strong>📞 Atendimento:</strong>
+            <p>Fale conosco pelo WhatsApp para tirar dúvidas ou agendar sua matrícula.</p>
+          </div>
         </div>
       </div>
+
     </div> <!-- fim .row -->
   </div>
 </section>
+
+<!-- ESTILOS -->
+<style>
+.item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.item p {
+  font-size: 15.5px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.main-button-red a {
+  background-color: #dc3545;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  color: #fff !important;
+  display: inline-block;
+}
+
+.main-button-yellow a {
+  background-color: #ffc107;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  color: #000 !important;
+  display: inline-block;
+}
+
+/* Painel tipo panfleto */
+.painel-info {
+  background: #ffffff;
+  border: 2px solid #ffc107;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.painel-titulo {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #111;
+  border-left: 6px solid #ffc107;
+  padding-left: 15px;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box strong {
+  display: block;
+  font-size: 16.5px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.info-box p {
+  font-size: 15.5px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .painel-info {
+    margin-top: 30px;
+    padding: 25px 20px;
+  }
+
+  .painel-titulo {
+    font-size: 20px;
+  }
+
+  .info-box strong {
+    font-size: 15.5px;
+  }
+
+  .info-box p {
+    font-size: 15px;
+  }
+}
+</style>
+
+<!-- BOOTSTRAP (garante grid e responsividade) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 
   <section class="our-courses" id="courses">
@@ -401,68 +557,279 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </section>
 
-  <section class="our-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Algumas informações sobre a Auto Escola Remanso</h2>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="count-area-content percentage">
-                    <div class="count-digit">97</div>
-                    <div class="count-title">Taxa de aprovação</div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="count-area-content">
-                    <div class="count-digit">8</div>
-                    <div class="count-title">Professores ativos</div>
-                  </div>
+<section class="our-facts">
+  <div class="container">
+    <div class="row">
+      <!-- Coluna 1: Informações principais -->
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Algumas informações sobre a Auto Escola Remanso</h2>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <div class="count-area-content percentage">
+                  <div class="count-digit">97</div>
+                  <div class="count-title">Taxa de aprovação</div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="count-area-content new-students">
-                    <div class="count-digit">4289</div>
-                    <div class="count-title">Estudantes Aprovados</div>
-                  </div>
-                </div> 
-                <div class="col-12">
-                  <div class="count-area-content">
-                    <div class="count-digit">32</div>
-                    <div class="count-title">Certificações de Auto Escola</div>
-                  </div>
+              <div class="col-12">
+                <div class="count-area-content">
+                  <div class="count-digit">8</div>
+                  <div class="count-title">Professores ativos</div>
                 </div>
               </div>
             </div>
           </div>
-        </div> 
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <div class="count-area-content new-students">
+                  <div class="count-digit">4289</div>
+                  <div class="count-title">Estudantes Aprovados</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="count-area-content">
+                  <div class="count-digit">32</div>
+                  <div class="count-title">Certificações de Auto Escola</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Coluna 2: Cursos profissionalizantes -->
+      <!-- Coluna 2: Cursos profissionalizantes -->
+<!-- Coluna de Cursos Profissionalizantes -->
+<div class="col-lg-6 col-md-12">
+  <div class="training-info">
+    <h3 class="cursos-titulo">🚗 Serviços +</h3>
+    <p class="cursos-desc">
+      A Auto Escola Remanso oferece treinamentos especializados para diversas categorias do transporte, com instrutores qualificados e cursos reconhecidos pelos órgãos competentes.
+    </p>
+
+    <div class="curso">
+      <h4>🚑 Curso de Condutor de Veículos de Emergência</h4>
+      <p>Capacitação completa para dirigir ambulâncias e viaturas, com foco em segurança, direção defensiva e atendimento emergencial.</p>
     </div>
-  </section>
+
+    <div class="curso">
+      <h4>🚌 Transporte de Passageiros</h4>
+      <p>Formação para motoristas de ônibus, vans escolares e fretados. Ênfase em responsabilidade e conforto dos passageiros.</p>
+    </div>
+
+    <div class="curso">
+      <h4>🚛 Curso MOPP</h4>
+      <p>Movimentação e Operação de Produtos Perigosos — ideal para quem transporta materiais inflamáveis, químicos ou tóxicos.</p>
+    </div>
+
+    <div class="curso">
+      <h4>📚 Atualização e Reciclagem</h4>
+      <p>Curso online para renovação da CNH, ideal para condutores com pontuação ou exigência do DETRAN.</p>
+    </div>
+
+    <div class="curso">
+      <h4>➕ Adição de Categoria A e B</h4>
+      <p>Adicione categoria de carro ou moto à sua habilitação com estrutura moderna e instrutores experientes.</p>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=5519981717647&text=Olá,%20tenho%20interesse%20nos%20cursos%20profissionalizantes%20da%20Auto%20Escola%20Remanso!" 
+       target="_blank" class="whatsapp-btn">
+      📱 Fale com a gente no WhatsApp
+    </a>
+  </div>
+</div>
+
+<style>
+.training-info {
+  background: #ffffff;
+  border: 2px solid #ffc107;
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+h2.cursos-titulo{
+  color: black;
+}
+.cursos-titulo {
+  font-size: 30px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-left: 6px solid #ffc107;
+  padding-left: 15px;
+}
+
+.cursos-desc {
+  font-size: 16.5px;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.curso h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 20px;
+}
+
+.curso p {
+  font-size: 15.5px;
+  color: #555;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 35px;
+            background: linear-gradient(90deg, #f9a826, #f78e00);
+  color: white;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Responsividade aprimorada para celular */
+@media screen and (max-width: 768px) {
+  .training-info {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+
+  .cursos-titulo {
+    font-size: 24px;
+    padding-left: 12px;
+  }
+
+  .curso h4 {
+    font-size: 16px;
+  }
+
+  .curso p {
+    font-size: 15px;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
+</style>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Estilos modernos -->
+<style>
+.training-info {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.training-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.training-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 18px;
+  color: #333;
+}
+
+.training-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+  text-decoration: none;
+  color: white;
+}
+</style>
+
+<!-- Ícones do Font Awesome (garanta que está incluso no seu projeto) -->
+
+
+
 <section class="contact-us" id="contact" style="padding: 80px 0; background: #111;">
   <div class="container">
     <div class="row align-items-center">
       <!-- Botão de CTA grande -->
       <div class="col-lg-8 mb-4 mb-lg-0">
+        <style>
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.2); opacity: 0.1; }
+      100% { transform: scale(1); opacity: 0.4; }
+    }
+
+    .animated-cta.visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+  </style>
         <div class="cta-section animated-cta" style="
           background: linear-gradient(90deg, #f9a826, #f78e00);
           padding: 60px;
           border-radius: 12px;
           text-align: center;
           color: #fff;
-          box-shadow: 0 8px 24px rgba(0,0,0,0.3);
           position: relative;
           overflow: hidden;
           opacity: 0;
           transform: translateY(40px);
           transition: all 0.8s ease-in-out;
+          box-shadow: 0 12px 30px rgba(255, 204, 0, 0.3);
         ">
           <!-- brilho suave no fundo -->
           <div style="
@@ -519,7 +886,7 @@ onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rg
             </li>
             <li style="margin-bottom: 25px;">
               <h6 style="margin: 0; font-weight: 700; color: #ffcc00;">📧 Email</h6>
-              <span><a href="mailto:contato@autoescola.com.br" style="color: #fff; text-decoration: none;">autoescolaremanso@gmail.com.br</a></span>
+              <span><a href="mailto:contato@autoescola.com.br" style="color: #fff; text-decoration: none;">autoescolaremanso@gmail.com</a></span>
             </li>
             <li style="margin-bottom: 25px;">
               <h6 style="margin: 0; font-weight: 700; color: #ffcc00;">📍 Endereço</h6>
@@ -527,13 +894,19 @@ onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rg
                 <a href="https://www.google.com/maps/place/Auto+Escola+Remanso+B.B.E/@-22.8659073,-47.2150372,19z/data=!3m1!4b1!4m6!3m5!1s0x94c8bc001dcdbecb:0x3996d14eeff3eb49!8m2!3d-22.8659085!4d-47.2143935!16s%2Fg%2F11c6cx1rbp?entry=ttu" target="_blank" style="color: #fff; text-decoration: none;">
                   R. José Camilo de Camargo, 56 - Lot. Remanso Campineiro, Hortolândia - SP
                 </a>
-              </span>
+            </li>
+            <li style="margin-bottom: 25px;">
+                 <h6 style="margin: 0; font-weight: 700; color: #ffcc00;">📍 Segunda Unidade</h6>
+                <a>
+                  Rua Antônio da Costa Santos, 235, Jardim Nova América, Hortolândia - SP
+                </a>
             </li>
             <li>
               <h6 style="margin: 0; font-weight: 700; color: #ffcc00;">🌐 Website</h6>
               <span style="color: #fff;">www.autoescolaremanso.com.br</span>
             </li>
           </ul>
+          </span>
         </div>
       </div>
     </div>

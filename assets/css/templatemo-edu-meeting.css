@@ -834,7 +834,7 @@ services
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
-  background-color: #fff;
+  background: linear-gradient(90deg, #f9a826, #f78e00);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -873,7 +873,7 @@ services
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
-  background-color: #fff;
+  background: linear-gradient(90deg, #f9a826, #f78e00);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1112,7 +1112,7 @@ section.our-courses {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 50px;
   padding-bottom: 130px;
 }
 
@@ -1201,7 +1201,7 @@ section.our-courses {
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
-  background-color: #fff;
+          background: linear-gradient(90deg, #f9a826, #f78e00);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1240,7 +1240,7 @@ section.our-courses {
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
-  background-color: #fff;
+   background: linear-gradient(90deg, #f9a826, #f78e00);
   width: 50px;
   height: 50px;
   border-radius: 50%;
